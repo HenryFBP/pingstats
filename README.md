@@ -1,3 +1,11 @@
+## install/run
+
+    pipenv install
+    pipenv shell
+    python pingstats.py
+
+## usage
+
 Ping google for an hour:
 
     sudo python3 pingstats.py --host google.com --comment 'pinging google for 1 hour' --ping_amount 86400
