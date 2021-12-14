@@ -156,4 +156,5 @@ if __name__ == '__main__':
             pingEvent = PingEvent.ping_now(host=HOST, sequence_number=i)
             print(pingEvent.as_csv_row())
             f.write(pingEvent.as_csv_row() + "\n")
+            f.flush()
             time.sleep(PING_DELAY / 1000.0)
